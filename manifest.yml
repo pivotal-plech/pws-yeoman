@@ -1,0 +1,9 @@
+---
+applications:
+- name: pushyeoman
+  buildpack: https://github.com/cloudfoundry/heroku-buildpack-nodejs.git
+  command: node server.js
+  mem: 1G
+  instances: 1
+  host: pushyeoman
+  domain: cfapps.io
